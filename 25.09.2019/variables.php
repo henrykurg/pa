@@ -21,3 +21,7 @@ echo "Vanus: ".$vanus."<br>";
 echo "Pikkus: ".$pikkus."<br>";
 echo "Kaal: ".$kaal."<br>";
 
+
+//Dünaamiline muutujate defineerimine
+$kmi = $kaal / ($pikkus * $pikkus);
+echo "Kehamassiindeks on: ".$kmi."<br>";
