@@ -26,4 +26,13 @@ Koosta kirjeldus antud muudatusele
 Lükka lokaalsest repost kirjeldus kausreposse (nt. github.com)
 ''' git push -uf origin master '''
 
-Siin origin on ühenduse nimi ja master on heaharu
+Siin origin on ühenduse nimi ja master on peaharu
+
+"Command+9" saad ligipääsu, et kas oled pushind githubiga (Log - origin % master)
+
+"Shift+command+K" - giti push githubi
+
+*git kasutamine läbi PhpStorimi
+
+command+k
+antud vali vajalikud failid, mis on vaja antud commitiga seostada, lisa commiti sõne ja vajuta commit või commit and push
