@@ -7,11 +7,11 @@ $raadius = $_GET['raadius'];
 echo 'Sisestatud raadius on '.$raadius.'<br>';
 //arvutused
 //ringi pindala
-$ringiPindala = 3.14 * $raadius * $raadius;
+$ringiPindala = pi() * $raadius * $raadius;
 //ringi ümbermõõt
-$ringiUmbermoot = 3.14 * 2 * $raadius;
+$ringiUmbermoot = pi() * 2 * $raadius;
 //muutujate andmete tüübi ja väärtuste kotroll
 //var_dump($ringiPindala);
 //var_dump($ringiUmbermoot);
-echo 'Ringi pindala on '.$ringiPindala.'<br>';
-echo 'Ringi ümbermõõt on '.$ringiUmbermoot.'<br>';
+echo 'Ringi pindala on '.round($ringiPindala, 3).'<br>';
+echo 'Ringi ümbermõõt on '.round($ringiUmbermoot, 3).'<br>';
