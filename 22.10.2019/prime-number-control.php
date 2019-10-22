@@ -3,9 +3,8 @@
 //define function
 
 function isPrimenumber ($number) {
-    $result='';
     if ($number < 2) {
-        $result= $number.' - antud arv ei kuulu valitud vahemiku sisse <br>';
+        echo $number.' - antud arv ei kuulu valitud vahemiku sisse <br>';
     } else {
         $divider = 2; // define divider
         while ($number % $divider != 0) {
@@ -14,13 +13,22 @@ function isPrimenumber ($number) {
         }
         // if number and divider is equal - prime number
         if ($number == $divider) {
-            $result= $number . ' on algarv<br>';
+            $result= true;
         } else {
             // otherwise
-            $result=$number . ' ei ole algarv<br>';
+            $result=false;
         }
     }
     return $result;
 }
 
-echo isPrimenumber(rand(0,1000));
+function isPRimenumberDescription($number, $isPrime) {
+    if($isPrime) {
+        echo $number. ' on algarv';
+    }
+    else{
+        echo $number. ' ei ole algarv';
+    }
+}
+
+isPRimenumberDescription( 2, isPrimenumber(2));
